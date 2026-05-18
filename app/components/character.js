@@ -2,7 +2,7 @@ export default function Character({ data, isHero, onAction, isHeroTurn }) {
   const currentLife = data ? data.life : 100;
   const lifePercent = Math.max(0, currentLife) + "%";
   
-  const spriteImage = isHero ? "/heroi.jpg" : "/vilao.png";
+  const spriteImage = isHero ? "./heroi.jpg" : "./vilao.png";
 
   return (
     <div className="character">
